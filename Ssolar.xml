@@ -1,0 +1,338 @@
+<scene>
+	<group>
+		<translate X="-310" Y="0" Z="0"/>
+		<lights> 
+			<light type="POINT" posX="0" posY="0" posZ="0" ambX="0.2" ambY="0.2" ambZ="0.2" diffX="1" diffY="1" diffZ="1" /> 
+		</lights>
+		<models>
+				<model camera="sky.3d" texture="sky.jpg"/>
+	  	</models>
+		<group>
+			<translate time="10" >
+				<point X="-200" Y="0" Z="0" />
+				<point X="0" Y="-25" Z="400" />
+				<point X="960" Y="-50" Z="0" />
+				<point X="0" Y="-25" Z="-400" />
+			</translate>
+			<colour X="1" Y="1" Z="0"/>
+			<scale X="3" Y="3" Z="3"/>
+			<models>
+	  			<model file="teapot.3d" texture="Halley.png" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  		</models>
+		</group>
+		<group>sol
+			<rotate time="10" axisX="0" axisY="1" axisZ="0" /> 
+			<colour X="1" Y="0.549" Z="0"/>
+	  		<scale X="160" Y="160" Z="160"/>
+	  		<models>
+	  			<model file="gasosos.3d" texture="Sun.jpg" emiR = "1" emiG = "1" emiB = "1" />
+	  		</models>
+		</group>
+		<group> mercurio	
+			<colour X="0.502" Y="0.502" Z="0.502"/>		
+			<translate time="2.4" >
+				<point X="181" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-181" />
+				<point X="-181" Y="0" Z="0" />
+				<point X="0" Y="0" Z="181" />
+			</translate>
+			<rotate time="2.4" axisX="0" axisY="1" axisZ="0" /> 
+	  		<models>
+	  			<model file="rochosos.3d" texture="Mercury.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  		</models>
+		</group>
+		<group> venus	
+			<colour X="0.941" Y="902" Z="0.549"/>		 
+	  		<translate time="6.1" >
+				<point X="194.5" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-194.5" />
+				<point X="-194.5" Y="0" Z="0" />
+				<point X="0" Y="0" Z="194.5" />
+			</translate>
+			<rotate time="6.1" axisX="0" axisY="1" axisZ="0" />
+	  		<scale X="2.5" Y="2.5" Z="2.5"/>
+	  		<models>
+	  			<model file="rochosos.3d" texture="Venus.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  		</models>
+		</group>
+		<group> terra
+	  		<colour X="0" Y="0" Z="1"/>					 
+	  		<translate time="10" >
+				<point X="209.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-209.6" />
+				<point X="-209.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="209.6" />
+			</translate>
+	  		<scale X="2.6" Y="2.6" Z="2.6"/>
+	  		<group>
+	  			<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+	  			<models>
+	  				<model file="rochosos.3d" texture="Earth.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> lua
+	  			<colour X="0.502" Y="0.502" Z="0.502"/>
+				<translate time="2" >
+					<point X="1.5" Y="0" Z="0" />
+					<point X="0" Y="0" Z="-1.5" />
+					<point X="-1.5" Y="0" Z="0" />
+					<point X="0" Y="0" Z="1.5" />
+				</translate>
+				<rotate time="0.6" axisX="0" axisY="1" axisZ="0" /> 
+				<scale X="0.25" Y="0.25" Z="0.25"/>
+				<models>
+	  				<model file="rochosos.3d" texture="Moon.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+		</group>
+		<group> marte
+			<colour X="1" Y="0.271" Z="0"/>
+			<translate time="18.8" >
+				<point X="222.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="222.6" />
+				<point X="-222.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-222.6" />
+			</translate>
+			<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+	  		<scale X="1.4" Y="1.4" Z="1.4"/>
+	  		<models>
+	  			<model file="rochosos.3d" texture="Mars.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  		</models>
+		</group>
+		<group> jupiter			
+			<colour X="0.804" Y="0.522" Z=" 0.247"/>
+	  		<translate time="118.7" >
+				<point X="263" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-263" />
+				<point X="-263" Y="0" Z="0" />
+				<point X="0" Y="0" Z="263" />
+			</translate>
+	  		<scale X="29" Y="29" Z="29"/>
+	  		<group>
+				<rotate time="0.9" axisX="0" axisY="1" axisZ="0" /> 
+	  			<models>
+	  				<model file="gasosos.3d" texture="Jupiter.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> io
+	  			<colour X="0.855" Y="0.647" Z=" 0.125"/>
+				<translate time="10" >
+					<point X="-1.2" Y="0" Z="0" />
+					<point X="0" Y="-1.2" Z="0" />
+					<point X="1.2" Y="0" Z="0" />
+					<point X="0" Y="1.2" Z="0" />
+				</translate>
+				<scale X="0.025" Y="0.025" Z="0.025"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Io.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+		    </group>
+	  		<group> europa
+	  			<colour X="1" Y="1" Z=" 0.941"/>
+				<translate time="5" >
+					<point X="-1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+				</translate>
+				<scale X="0.02" Y="0.02" Z="0.02"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Europa.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	    	</group>
+	  		<group> ganimedes
+	  			<colour X="0.184" Y="0.310" Z=" 0.310"/>
+				<translate time="5" >
+					<point X="0" Y="-1.1" Z="-0.8" />
+					<point X="0" Y="1.1" Z="-0.8" />
+					<point X="0" Y="1.1" Z="0.8" />
+					<point X="0" Y="-1.1" Z="0.8" />
+				</translate>
+				<scale X="0.035" Y="0.035" Z="0.035"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Ganimedes.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+			</group>
+	  		<group> calisto
+	  			<colour X="0.933" Y="0.910" Z=" 0.667"/>
+				<translate time="10" >
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="0" Y="-1.2" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+					<point X="0" Y="1.2" Z="0" />
+				</translate>
+				<scale X="0.03" Y="0.03" Z="0.03"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Calisto.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+		</group>
+		<group> saturno
+	  		<translate time="294.8" >
+				<point X="345" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-345" />
+				<point X="-345" Y="0" Z="0" />
+				<point X="0" Y="0" Z="345" />
+			</translate>
+			<scale X="23" Y="23" Z="23"/>
+			<group>
+				<colour X="0.933" Y="0910" Z=" 0.667"/>
+				<rotate time="1.5" axisX="0" axisY="1" axisZ="0" /> 			
+	  			<models>
+	  				<model file="gasosos.3d" texture="Saturn.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group>
+	 	  		<colour X="0.941" Y="0.902" Z="0.549"/>
+				<rotate angle="-30" axisX="1" axisY="0" axisZ="0"/>
+				<rotate time="1.5" axisX="0" axisY="1" axisZ="0" /> 
+				<models>
+	  				<model file="saturn.3d" texture="SaturnRing.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> tita
+	  			<colour X="0.741" Y="0.718" Z="0.420"/>
+				<translate time="10" >
+					<point X="-1.2" Y="0" Z="0" />
+					<point X="0" Y="-1.2" Z="0" />
+					<point X="1.2" Y="0" Z="0" />
+					<point X="0" Y="1.2" Z="0" />
+				</translate>
+				<scale X="0.04" Y="0.04" Z="0.04"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Titan.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> encelado
+	  			<colour X="0.753" Y="0.753" Z="0.753"/>
+				<translate time="5" >
+					<point X="-1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+				</translate>
+				<scale X="0.004" Y="0.004" Z="0.004"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Encelado.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> mimas
+	  			<colour X="0.663" Y="0.663" Z="0.663"/>
+				<translate time="2" >
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="0" Y="-1.2" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+					<point X="0" Y="1.2" Z="0" />
+				</translate>
+				<scale X="0.003" Y="0.003" Z="0.003"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Mimas.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> japeto
+	  			<colour X="0.827" Y="0.827" Z="0.827"/>
+				<translate X="0.3" Y="0.3" Z="1.3"/>
+				<translate time="1" >
+					<point X="1.3" Y="1.3" Z="1.3" />
+					<point X="1.3" Y="-1.3" Z="-1.3" />
+					<point X="-1.3" Y="-1.3" Z="-1.3" />
+					<point X="-1.3" Y="1.3" Z="1.3" />
+				</translate>
+				<scale X="0.01" Y="0.01" Z="0.01"/>
+				<rotate time="1" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="rochosos.3d" texture="Japeto.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  	</group>
+		<group> urano
+			<colour X="0.255" Y="0.412" Z="0.882"/>
+	  		<translate time="841" >
+				<point X="407.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-407.6" />
+				<point X="-407.6" Y="0" Z="0" />
+				<point X="0" Y="0" Z="407.6" />
+			</translate>
+	  		<scale X="9.6" Y="9.6" Z="9.6"/>
+	  		<group>
+	  			<rotate time="-0.6" axisX="0" axisY="1" axisZ="0" />
+	  			<models>
+	  				<model file="gasosos.3d" texture="Uranus.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group>
+	 	  		<colour X="0.941" Y="0.902" Z="0.549"/>
+				<rotate angle="90" axisX="1" axisY="0" axisZ="0"/>
+				<rotate time="-0.6" axisX="0" axisY="1" axisZ="0" />
+				<models>
+	  				<model file="uranus.3d" texture="UranusRing.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> tita
+	  			<colour X="0.663" Y="0.663" Z="0.663"/>
+				<translate time="2" >
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="0" Y="-1.2" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+					<point X="0" Y="1.2" Z="0" />
+				</translate>
+				<scale X="0.03" Y="0.03" Z="0.03"/>
+				<rotate time="0.6" axisX="0" axisY="1" axisZ="0" /> 
+				<models>
+	  				<model file="rochosos.3d" texture="Titan.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> miranda
+	  			<colour X="0.827" Y="0.827" Z="0.827"/>
+				<translate time="5" >
+					<point X="-1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="-1.2" />
+					<point X="1.2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="1.2" />
+				</translate>
+				<scale X="0.028" Y="0.028" Z="0.028"/>
+				<rotate time="0.6" axisX="0" axisY="1" axisZ="0" /> 
+				<models>
+	  				<model file="rochosos.3d" texture="Miranda.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+		</group>
+		<group> neptune
+			<colour X="0" Y="0" Z="0.849"/>
+	  		<translate time="1649.3" >
+				<point X="446.5" Y="0" Z="0" />
+				<point X="0" Y="0" Z="-446.5" />
+				<point X="-446.5" Y="0" Z="0" />
+				<point X="0" Y="0" Z="446.5" />
+			</translate>
+			<scale X="9.3" Y="9.3" Z="9.3"/>
+			<group>
+				<rotate time="0.6" axisX="0" axisY="1" axisZ="0" /> 			
+	  			<models>
+	  				<model file="gasosos.3d" texture="Neptune.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+	  		<group> tritao
+	  			<colour X="0.827" Y="0.827" Z="0.827"/>
+				<translate time="5" >
+					<point X="-2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="-2" />
+					<point X="2" Y="0" Z="0" />
+					<point X="0" Y="0" Z="2" />
+				</translate>
+				<rotate time="0.6" axisX="0" axisY="1" axisZ="0" /> 
+				<scale X="0.1" Y="0.1" Z="0.1"/>
+				<models>
+	  				<model file="rochosos.3d" texture="Triton.jpg" ambR="1" ambG="1" ambB="1" diffR="0.9" diffG="0.9" diffZ="0.9" spR="0.8" spG="0.8" spB="0.8" />
+	  			</models>
+	  		</group>
+		</group>
+  	</group>
+</scene>

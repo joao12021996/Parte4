@@ -1,0 +1,11 @@
+<scene>
+	<group>
+		<lights> 
+			<light type="POINT" posX="-1000" posY="0" posZ="0"/> 
+		</lights>
+		<group>sol
+			<scale X="50" Y="50" Z="50"/>
+			<rotate time="10" axisX="0" axisY="1" axisZ="0"/>
+		</group>
+	</group>
+</scene>
